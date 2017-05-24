@@ -1,0 +1,32 @@
+<head>
+    <title>Image Search Abstraction Layer</title>
+</head>
+
+<p>In order to use this, enter a search term in the following format in the address bar:</p>
+
+<p>url..../api/imagesearch/&ltsearchterm&gt</p>
+
+<p>The result will be an array of objects showing the returned images' url, source url, thumbnail url, and snippet:</p>
+
+<code>
+    [ 
+        {
+            "url": "http://www.example.com",
+            "page_url": "http://www.example.com",
+            "thumbnail_url: "http://www.example.com",
+            "snippet": "This is a snippet"
+        } 
+        ...
+    ]
+
+</code>
+
+<p>You can view 10 results at a time. To view more results you can add an offset in the url:</p>
+
+<p>url...../api/imagesearch/&ltsearchterm&gt?offset=&ltnumber&gt</p>
+
+<p>You can also find the 10 most recently searched terms by going to:</p>
+
+<p>url..../api/latest/imagesearch</p>
+
+<p>Note: This tool only returns up to 100 results. </p>
